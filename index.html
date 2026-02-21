@@ -32,6 +32,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
+  padding-top: 26px;
   font-family: 'Source Sans 3', sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -599,7 +600,8 @@ footer strong { color: var(--text); }
 
 /* Print */
 @media print {
-  body { background: white; font-size: 10pt; }
+  body {
+  padding-top: 26px; background: white; font-size: 10pt; }
   body::before, .nav-menu, .back-to-top, .mobile-toc-toggle { display: none !important; }
   .hero { min-height: auto; padding: 2rem 0; page-break-after: always; }
   section { padding: 1.5rem 0; page-break-inside: avoid; }
@@ -764,6 +766,10 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
 </style>
 </head>
 <body>
+<div id="draft-banner" style="position:fixed; top:0; left:0; right:0; z-index:9999; background:#c53030; color:white; text-align:center; font-family:'JetBrains Mono',monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; padding:5px 0; opacity:0.92;">
+  Draft — For Internal Review Only
+</div>
+
 
 <nav class="nav-menu">
   <a class="nav-item nav-sec-amber active" onclick="navScrollTo('#hero')"><span class="nav-dot-indicator"></span><span class="nav-label">Overview</span></a>
@@ -873,7 +879,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
 <!-- ═══════════ 1. HERO ═══════════ -->
 <section class="hero" id="hero">
   <div class="container">
-    <div class="hero-badge">⬥ BUAD 304 · Fall 2025 · v2.0 — February 2026</div>
+    <div class="hero-badge">⬥ BUAD 304 · Fall 2025 · v2.0 — February 2026 · <span style="color:#c53030; font-weight:700;">DRAFT</span></div>
     <h1>511 Triads Submitted. <em>32 Matched Sets Completed.</em></h1>
     <p class="hero-sub">A pipeline analysis of the MOR Field Study survey response data, tracking 511 employee triads from initial contact submission through survey completion and attention-check screening. This report quantifies attrition at each stage and identifies factors associated with higher completion rates.</p>
     <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.75rem; line-height:1.6;">
@@ -1373,7 +1379,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
     <h3 class="h3-styled reveal" id="timing-cumulative">Cumulative completion by minute</h3>
     <p class="section-desc reveal" style="margin-bottom:1rem">Among respondents who finished each survey (under 2 hrs), the percentage who completed by each minute mark.</p>
     <div class="reveal" style="overflow-x:auto; margin: 1.5rem 0 2rem;">
-      <svg viewBox="0 0 820 400" style="width:100%;  height:auto; font-family:'Source Sans 3',sans-serif;">
+      <svg viewBox="0 0 820 425" style="width:100%;  height:auto; font-family:'Source Sans 3',sans-serif;">
         <defs>
           <linearGradient id="focalTimeGrad" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#d62800" stop-opacity="0.26"/>
@@ -1412,7 +1418,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
         <text x="545" y="365" text-anchor="middle" fill="#3d3935" font-size="10">60</text>
         <text x="665" y="365" text-anchor="middle" fill="#3d3935" font-size="10">75</text>
         <text x="785" y="365" text-anchor="middle" fill="#3d3935" font-size="10">90</text>
-        <text x="425" y="390" text-anchor="middle" fill="#3d3935" font-size="10" font-style="italic">Minutes →</text>
+        <text x="425" y="380" text-anchor="middle" fill="#3d3935" font-size="10" font-style="italic">Minutes →</text>
 
         <!-- Vertical tick marks -->
         <line x1="65" y1="345" x2="65" y2="350" stroke="#e8e5e0"/>
@@ -1454,12 +1460,12 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
         <text x="240" y="344" fill="#008a3e" font-size="9" font-family="'JetBrains Mono',monospace">Cow: 18%</text>
 
         <!-- Legend -->
-        <rect x="200" y="384" width="14" height="3" rx="1" fill="#d62800"/>
-        <text x="218" y="388" fill="#2d2a27" font-size="9.5">Focal (n=79)</text>
-        <rect x="340" y="384" width="14" height="3" rx="1" fill="#0040dd"/>
-        <text x="348" y="388" fill="#2d2a27" font-size="9.5">Supervisor (n=64)</text>
-        <rect x="510" y="384" width="14" height="3" rx="1" fill="#008a3e"/>
-        <text x="508" y="388" fill="#2d2a27" font-size="9.5">Coworker (n=66)</text>
+        <rect x="140" y="402" width="14" height="3" rx="1" fill="#d62800"/>
+        <text x="160" y="406" fill="#2d2a27" font-size="9.5">Focal (n=79)</text>
+        <rect x="340" y="402" width="14" height="3" rx="1" fill="#0040dd"/>
+        <text x="360" y="406" fill="#2d2a27" font-size="9.5">Supervisor (n=64)</text>
+        <rect x="560" y="402" width="14" height="3" rx="1" fill="#008a3e"/>
+        <text x="580" y="406" fill="#2d2a27" font-size="9.5">Coworker (n=66)</text>
       </svg>
     </div>
     <div class="insight action reveal">
@@ -1493,7 +1499,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
     <h3 class="h3-styled reveal" id="timing-dropout">When dropouts leave (time spent before abandoning)</h3>
     <p class="section-desc reveal" style="margin-bottom:1rem">Among respondents who opened a survey but did not finish (session durations ≤2 hrs), the cumulative percentage who had already abandoned by each minute mark. Median dropout times: Supervisor 2.7 min, Coworker 3.5 min, Focal 4.7 min.</p>
     <div class="reveal" style="overflow-x:auto; margin: 1.5rem 0 2rem;">
-      <svg viewBox="0 0 820 400" style="width:100%;  height:auto; font-family:'Source Sans 3',sans-serif;">
+      <svg viewBox="0 0 820 425" style="width:100%;  height:auto; font-family:'Source Sans 3',sans-serif;">
         <defs>
           <linearGradient id="focalDropGrad" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#d62800" stop-opacity="0.30"/>
@@ -1534,7 +1540,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
         <text x="501.7" y="365" text-anchor="middle" fill="#3d3935" font-size="10">20</text>
         <text x="610.8" y="365" text-anchor="middle" fill="#3d3935" font-size="10">25</text>
         <text x="720" y="365" text-anchor="middle" fill="#3d3935" font-size="10">30</text>
-        <text x="392" y="390" text-anchor="middle" fill="#3d3935" font-size="10" font-style="italic">Minutes spent before abandoning →</text>
+        <text x="392" y="380" text-anchor="middle" fill="#3d3935" font-size="10" font-style="italic">Minutes spent before abandoning →</text>
 
         <!-- Vertical tick marks -->
         <line x1="65" y1="345" x2="65" y2="350" stroke="#e8e5e0"/>
@@ -1584,12 +1590,12 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
         <text x="225" y="283" fill="#008a3e" font-size="9.5" font-family="'JetBrains Mono',monospace">Cow:   54% by 5 min (med 3.5m)</text>
 
         <!-- Legend -->
-        <rect x="170" y="384" width="14" height="3" rx="1" fill="#d62800"/>
-        <text x="188" y="388" fill="#2d2a27" font-size="9.5">Focal (n=42)</text>
-        <rect x="310" y="384" width="14" height="3" rx="1" fill="#0040dd"/>
-        <text x="318" y="388" fill="#2d2a27" font-size="9.5">Supervisor (n=40)</text>
-        <rect x="480" y="384" width="14" height="3" rx="1" fill="#008a3e"/>
-        <text x="478" y="388" fill="#2d2a27" font-size="9.5">Coworker (n=35)</text>
+        <rect x="140" y="402" width="14" height="3" rx="1" fill="#d62800"/>
+        <text x="160" y="406" fill="#2d2a27" font-size="9.5">Focal (n=42)</text>
+        <rect x="340" y="402" width="14" height="3" rx="1" fill="#0040dd"/>
+        <text x="360" y="406" fill="#2d2a27" font-size="9.5">Supervisor (n=40)</text>
+        <rect x="560" y="402" width="14" height="3" rx="1" fill="#008a3e"/>
+        <text x="580" y="406" fill="#2d2a27" font-size="9.5">Coworker (n=35)</text>
       </svg>
     </div>
     <div class="insight action reveal">
@@ -1601,7 +1607,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
     <h3 class="h3-styled reveal" id="timing-retention">Respondent retention by survey progress</h3>
     <p class="section-desc reveal" style="margin-bottom:1rem">Of all respondents who opened each survey link, the percentage remaining at each progress milestone. Includes attention-check pass rate as the final stage.</p>
     <div class="reveal" style="overflow-x:auto; margin: 1.5rem 0 2rem;">
-      <svg viewBox="0 0 820 420" style="width:100%;  height:auto; font-family:'Source Sans 3',sans-serif;">
+      <svg viewBox="0 0 820 440" style="width:100%;  height:auto; font-family:'Source Sans 3',sans-serif;">
         <defs>
           <linearGradient id="focalGrad" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#d62800" stop-opacity="0.32"/>
@@ -1682,12 +1688,12 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
         <text x="65" y="28" text-anchor="middle" fill="#3d3935" font-size="10" font-family="'JetBrains Mono',monospace">n=201 / 151 / 136</text>
 
         <!-- Legend -->
-        <rect x="200" y="392" width="14" height="3" rx="1" fill="#d62800"/>
-        <text x="218" y="396" fill="#2d2a27" font-size="9.5">Focal (n=201)</text>
-        <rect x="340" y="392" width="14" height="3" rx="1" fill="#0040dd"/>
-        <text x="348" y="396" fill="#2d2a27" font-size="9.5">Supervisor (n=151)</text>
-        <rect x="510" y="392" width="14" height="3" rx="1" fill="#008a3e"/>
-        <text x="508" y="396" fill="#2d2a27" font-size="9.5">Coworker (n=136)</text>
+        <rect x="140" y="416" width="14" height="3" rx="1" fill="#d62800"/>
+        <text x="160" y="420" fill="#2d2a27" font-size="9.5">Focal (n=201)</text>
+        <rect x="340" y="416" width="14" height="3" rx="1" fill="#0040dd"/>
+        <text x="360" y="420" fill="#2d2a27" font-size="9.5">Supervisor (n=151)</text>
+        <rect x="560" y="416" width="14" height="3" rx="1" fill="#008a3e"/>
+        <text x="580" y="420" fill="#2d2a27" font-size="9.5">Coworker (n=136)</text>
       </svg>
     </div>
     <div class="insight finding reveal">
