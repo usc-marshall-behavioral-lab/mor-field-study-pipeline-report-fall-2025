@@ -853,12 +853,10 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
   <a class="nav-sub nav-sec-red" onclick="navScrollTo('#recs-survey')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Survey Experience</span></a>
   <a class="nav-sub nav-sec-red" onclick="navScrollTo('#recs-student')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Student & Data Entry</span></a>
   <a class="nav-item nav-sec-gold" onclick="navScrollTo('#cross')"><span class="nav-dot-indicator"></span><span class="nav-label">Cross-Semester</span></a>
-  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-timing')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Response timing</span></a>
-  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-conversion')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Conversion rates</span></a>
-  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-email')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Email quality</span></a>
-  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-domain')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Domain matching</span></a>
-  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-spring26')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Spring 2026 update</span></a>
-  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-flags')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Watch items</span></a>
+  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-timing')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Headlines</span></a>
+  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-conversion')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Work vs personal</span></a>
+  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-email')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Spring 2026</span></a>
+  <a class="nav-sub nav-sec-gold" onclick="navScrollTo('#cross-spring26')"><span class="nav-sub-dot"></span><span class="nav-sub-label">Full report →</span></a>
     <a class="nav-item nav-sec-muted" onclick="navScrollTo('#sources')"><span class="nav-dot-indicator"></span><span class="nav-label">Sources</span></a>
 </nav>
 
@@ -911,12 +909,9 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
     <a class="mobile-toc-item sub" onclick="navScrollTo('#recs-survey');document.querySelector('.mobile-toc').classList.remove('open')">Survey Experience</a>
     <a class="mobile-toc-item sub" onclick="navScrollTo('#recs-student');document.querySelector('.mobile-toc').classList.remove('open')">Student & Data Entry</a>
     <a class="mobile-toc-item" onclick="navScrollTo('#cross');document.querySelector('.mobile-toc').classList.remove('open')">Cross-Semester</a>
-    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-timing');document.querySelector('.mobile-toc').classList.remove('open')">Response timing</a>
-    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-conversion');document.querySelector('.mobile-toc').classList.remove('open')">Conversion rates</a>
-    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-email');document.querySelector('.mobile-toc').classList.remove('open')">Email quality</a>
-    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-domain');document.querySelector('.mobile-toc').classList.remove('open')">Domain matching</a>
-    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-spring26');document.querySelector('.mobile-toc').classList.remove('open')">Spring 2026 update</a>
-    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-flags');document.querySelector('.mobile-toc').classList.remove('open')">Watch items</a>
+    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-timing');document.querySelector('.mobile-toc').classList.remove('open')">Headlines</a>
+    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-conversion');document.querySelector('.mobile-toc').classList.remove('open')">Work vs personal</a>
+    <a class="mobile-toc-item sub" onclick="navScrollTo('#cross-email');document.querySelector('.mobile-toc').classList.remove('open')">Spring 2026</a>
         <a class="mobile-toc-item" onclick="navScrollTo('#sources');document.querySelector('.mobile-toc').classList.remove('open')">Sources</a>
   </div>
 </div>
@@ -949,7 +944,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
 <section id="exec" style="padding-top:0;">
   <div class="container">
     <div class="exec-summary reveal">
-      <p><strong>Three factors account for most of the 94% pipeline loss (479 of 511 triads).</strong> First, a 65-day gap between contact submission and survey delivery means employees no longer recall agreeing to participate — and once surveys arrive, over half of those who open them leave within 5 minutes. Second, actual survey completion times (30–40 minutes median) exceed typical expectations for online surveys, and most respondents who open a link leave within the first 5 minutes. Third, contact characteristics are associated with completion rates: corporate emails are associated with approximately 3× the completion rate of personal emails, and triads sourced through family friends exhibit the highest completion rates among relationship types.</p>
+      <p><strong>Three factors account for most of the 94% pipeline loss (479 of 511 triads).</strong> First, a 65-day gap between contact submission and survey delivery means employees no longer recall agreeing to participate — and once surveys arrive, over half of those who open them leave within 5 minutes. Second, actual survey completion times (30–40 minutes median) exceed typical expectations for online surveys, and most respondents who open a link leave within the first 5 minutes. Third, contact characteristics are associated with completion rates: work email contacts are associated with 2.5–2.9× the completion rate of personal email contacts across all three roles, and triads sourced through family friends exhibit the highest completion rates among relationship types.</p>
       <p>The most addressable near-term opportunity involves the <strong>55 dyads</strong> where 2-of-3 surveys were started — in most cases, the missing respondent did not open their link. A targeted follow-up system for these near-misses, combined with reduced pipeline lag and shorter surveys, represents a direct path to increasing the number of usable matched sets.</p>
     </div>
   </div>
@@ -1770,8 +1765,8 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
 
     <div class="stat-row reveal" style="margin-top:1rem;">
       <div class="stat-box">
-        <div class="stat-value accent">3×</div>
-        <div class="stat-label">Corporate vs personal email yield</div>
+        <div class="stat-value accent">2.5–2.9×</div>
+        <div class="stat-label">Work vs personal (all roles)</div>
       </div>
       <div class="stat-box">
         <div class="stat-value blue">20.8%</div>
@@ -1824,7 +1819,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
 
     <div class="insight action reveal">
       <div class="insight-tag">Email type impact</div>
-      <p>Corporate emails complete at <strong>3× the rate</strong> of personal emails (9.2% vs 3.2%, n=511 triads). Encouraging students to collect work emails, or flagging personal-only triads for additional follow-up, may improve downstream response rates.</p>
+      <p>Work email contacts complete at <strong>2.5–2.9× the rate</strong> of personal email contacts across all three roles (Fall 2025, linked by student ID). Encouraging students to collect work emails, or flagging personal-only triads for additional follow-up, may improve downstream response rates.</p>
     </div>
     <a class="fn" title="Contact submission form (Step 2B) · email domain classification">[9]</a>
 
@@ -2516,7 +2511,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
           <div class="rec-evidence">→ <a href="#timing">See §03 Timing</a></div>
           <p>The 65-day median gap between contact submission and survey launch exceeds typical recall windows. Reducing this to 1–2 weeks, or sending an immediate confirmation email upon contact submission, may improve initial response rates.</p>
           <div style="margin-top:0.75rem; padding:0.75rem 1rem; border-radius:6px; background:rgba(22,163,74,0.06); border:1px solid rgba(22,163,74,0.15); font-size:0.85rem;">
-            <strong style="color:var(--green);">Cross-semester evidence (§10):</strong> Fall 2024 (time-to-50%: 4 days) achieved an 80.5% FE conversion rate. Spring 2025 (3 days) achieved 37.5%. Fall 2025's batched approach (18-day compressed window) achieved 25.3%. Rolling distribution has been implemented for Spring 2026 to address this.
+            <strong style="color:var(--green);">Cross-semester evidence (§10):</strong> Fall 2024 (time-to-50%: 4 days) achieved a 33.7% FE completion rate with the highest all-three-completed rate (16.6%). Spring 2025 (3 days) achieved 27.8%. Fall 2025's batched approach (18-day compressed window) achieved 25.5%. Rolling distribution has been implemented for Spring 2026 to address this.
           </div>
         </div>
       </div>
@@ -2641,7 +2636,7 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
           <div class="rec-title">Embed hard-halt validation in the email entry form</div>
           <span class="rec-tag high">HIGH</span>
           <div class="rec-evidence">→ <a href="#contacts">See §04 Contacts</a> · <a href="#quality">See §07 Quality</a> · <a href="#implemented">See §08 Implemented</a></div>
-          <p>The contact form already includes stronger language directing students toward work emails (see §08), which is associated with a shift from 36.6% to 56.4% all-work triads in Spring 2026. The next step is implementing real-time, in-form validation that prevents submission when the same email appears in more than one role field (focal, supervisor, coworker), when a @usc.edu address is entered in any employee field, or when the domain matches a predetermined list of personal email providers (e.g., gmail.com, yahoo.com, hotmail.com, outlook.com, icloud.com, aol.com). Given that corporate emails are associated with approximately 3× the triad completion rate, blocking personal domains at entry — with an inline message explaining that a work email is required and why — may reduce the 19.9% of triads submitted with all-personal emails. Qualtrics supports custom JavaScript validation and embedded data checks that can enforce these rules without requiring a separate screening step.</p>
+          <p>The contact form already includes stronger language directing students toward work emails (see §08), which is associated with a shift from 36.6% to 56.4% all-work triads in Spring 2026. The next step is implementing real-time, in-form validation that prevents submission when the same email appears in more than one role field (focal, supervisor, coworker), when a @usc.edu address is entered in any employee field, or when the domain matches a predetermined list of personal email providers (e.g., gmail.com, yahoo.com, hotmail.com, outlook.com, icloud.com, aol.com). Given that work email contacts are associated with approximately 2.5× the FE completion rate, blocking personal domains at entry — with an inline message explaining that a work email is required and why — may reduce the 19.9% of triads submitted with all-personal emails. Qualtrics supports custom JavaScript validation and embedded data checks that can enforce these rules without requiring a separate screening step.</p>
         </div>
       </div>
     </div>
@@ -2652,8 +2647,8 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
     <div class="insight action reveal" style="margin-top:3rem; border-left: 3px solid var(--green);">
       <div class="insight-tag" style="background:rgba(22,163,74,0.08); color:#16a34a;">Path forward</div>
       <p><strong>Summary.</strong> Eight changes have been implemented for Spring 2026: stronger email language with screening questions, deferred +1 credit determination, revised handouts, a student-facing pilot website, outreach talking points, an employee-facing FAQ site, rolling survey distribution, and readiness checks in the Step 2B form. The eleven recommendations above address remaining pipeline bottlenecks: survey duration, follow-up cadence, near-miss recovery, and attention-check attrition.</p>
-      <p><strong>Early evidence from Spring 2026 submissions (§10)</strong> indicates that the screening and email requirements are associated with measurable changes in contact quality: all-work-email triads rose from 36.6% to 56.4%, within-triad domain matching increased from 58.6% to 79.3%, and multi-submissions decreased from 95 to 37 students. These are pre-distribution metrics; downstream conversion rates will be available after survey distribution is complete.</p>
-      <p>Cross-semester analysis (§10) also identifies Fall 2024 as a reference point — the semester with the fewest submitted triads (195) but the highest conversion rate (80.5% FE), associated with early distribution and a 4-day time-to-50%. The combination of higher-quality submissions and rolling distribution in Spring 2026 aims to replicate those conditions.</p>
+      <p><strong>Early evidence from Spring 2026 submissions (§10)</strong> indicates that the screening and email requirements are associated with measurable changes in contact quality: all-work-email triads rose from 36.6% to 56.4% (submission composition), within-triad domain matching increased from 58.6% to 79.3%, and multi-submissions decreased from 95 to 37 students. These are pre-distribution metrics; downstream conversion rates will be available after survey distribution is complete.</p>
+      <p>Cross-semester analysis (§10) also identifies Fall 2024 as a reference point — the semester with the fewest submitted triads (187 linked) and the highest all-three-completed rate (16.6%), associated with early distribution and a 4-day time-to-50%. The combination of higher-quality submissions and rolling distribution in Spring 2026 aims to replicate those conditions.</p>
     </div>
   </div>
 </section>
@@ -2661,271 +2656,151 @@ section#recs .section-label { background:rgba(197,48,48,0.08); color:#c53030; }
     <p class="reveal" style="text-align:center; margin-bottom:2rem;"><a href="#recs" style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.8rem;">↑ Back to §09 Recommendations</a></p>
 
 
-<!-- ═══════════ 10. CROSS-SEMESTER ANALYSIS ═══════════ -->
+<!-- ═══════════ 10. CROSS-SEMESTER ANALYSIS (SUMMARY) ═══════════ -->
 <section id="cross">
   <div class="container">
     <div class="reveal">
       <div class="section-label" style="background:rgba(217,119,6,0.08); color:#d97706;">10 — Cross-Semester Analysis</div>
-      <h2 class="section-title">Five semesters of pipeline data and Spring 2026 preliminary comparison</h2>
-      <p class="section-desc">Comparing Fall 2023 through Fall 2025 survey response data with Spring 2026 Step 2B submission data. This section contextualizes the Fall 2025 findings within the broader trajectory and provides early evidence on the impact of the screening and process changes implemented for Spring 2026.</p>
-      <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:1rem;">Note: Fall 2025 triad counts in this section (517) are derived from Step 2B submission data (triads with all three email addresses present). The main report uses 511, derived from the merged survey dataset. The 6-triad difference reflects minor filtering differences between data sources.</p>
-      <p class="reveal" style="font-size:0.85rem; margin-bottom:1.5rem;">A standalone version of this analysis is also available: <a href="https://usc-marshall-behavioral-lab.github.io/mor-field-cross-semester-analysis" target="_blank" style="color:var(--accent);">Cross-Semester Analysis — Full Report</a></p>
+      <h2 class="section-title">Five semesters compared — and early Spring 2026 evidence</h2>
+      <p class="section-desc">Summary of the full cross-semester analysis, which traces each student's submitted contacts through to survey completion across Fall 2023–Fall 2025 and compares Spring 2026 pre-distribution submission quality. For complete tables, per-role breakdowns, and methodology notes, see the <a href="https://usc-marshall-behavioral-lab.github.io/mor-field-cross-semester-analysis" target="_blank" style="color:var(--accent); font-weight:600;">full cross-semester report</a>.</p>
     </div>
 
-    <h3 class="h3-styled reveal" id="cross-timing">Response timing across semesters</h3>
-    <p class="reveal" style="margin-bottom:1rem;">Survey response windows and time-to-50% for focal employee responses. Semesters with earlier distribution have generally exhibited faster engagement. Fall 2025 early responses (Oct 29, Nov 9) were confirmed as test/preview runs.</p>
-    <div class="semester-split reveal">
-      <div class="split-panel">
-        <div class="split-header fall">Fall Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Window</th><th>Days to 50%</th><th>FE responses</th></tr></thead>
-            <tbody>
-              <tr><td>Fall 2023</td><td class="mono">Oct 12 – Nov 20</td><td class="mono">11 days</td><td class="mono">154 <span style="color:var(--text-muted);font-size:0.8em;">/ 530</span></td></tr>
-              <tr style="background:var(--green-dim);"><td><strong>Fall 2024</strong></td><td class="mono">Nov 4 – Dec 7</td><td class="mono" style="color:var(--green);font-weight:600;">4 days</td><td class="mono">157 <span style="color:var(--text-muted);font-size:0.8em;">/ 195</span></td></tr>
-              <tr style="background:var(--red-dim);"><td><strong>Fall 2025</strong></td><td class="mono">Nov 24 – Dec 11</td><td class="mono" style="color:var(--red);font-weight:600;">18 days*</td><td class="mono">131 <span style="color:var(--text-muted);font-size:0.8em;">/ 517</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="split-panel">
-        <div class="split-header spring">Spring Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Window</th><th>Days to 50%</th><th>FE responses</th></tr></thead>
-            <tbody>
-              <tr><td>Spring 2024</td><td class="mono">Mar 26 – May 2</td><td class="mono">9 days</td><td class="mono">147 <span style="color:var(--text-muted);font-size:0.8em;">/ 319</span></td></tr>
-              <tr><td>Spring 2025</td><td class="mono">Apr 4 – May 5</td><td class="mono" style="color:var(--green);">3 days</td><td class="mono">99 <span style="color:var(--text-muted);font-size:0.8em;">/ 264</span></td></tr>
-              <tr><td style="color:var(--text-muted);">Spring 2026</td><td class="mono" style="color:var(--text-muted);">TBD</td><td class="mono" style="color:var(--text-muted);">TBD</td><td class="mono" style="color:var(--text-muted);">—</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <p class="reveal" style="font-size:0.78rem; color:var(--text-muted);">*Fall 2025 actual window was Nov 24–Dec 11 (18 days). The submission window was held open longer to increase student participation, which compressed survey distribution into late November.</p>
-
-    <div class="insight action reveal" style="margin-top:1.5rem;">
-      <div class="insight-tag">Key finding</div>
-      <p>The semesters with the fastest time-to-50% (Fall 2024: 4 days, Spring 2025: 3 days) also exhibited the highest focal employee conversion rates. In Fall 2024, 54% of FE responses arrived in Week 1. In Fall 2025, the batched distribution produced two response spikes (50 FE on Nov 24, 31 FE on Dec 3) rather than a gradual decay pattern.</p>
+    <div style="margin:1.5rem 0; padding:1rem 1.25rem; border-radius:8px; background:rgba(180,83,9,0.04); border:1px solid rgba(180,83,9,0.12);" class="reveal">
+      <p style="margin:0; font-size:0.9rem;"><strong style="color:var(--accent);">Full report →</strong> <a href="https://usc-marshall-behavioral-lab.github.io/mor-field-cross-semester-analysis" target="_blank" style="color:var(--accent);">Cross-Semester Analysis: Fall 2023–Spring 2026</a><br>
+      <span style="color:var(--text-muted); font-size:0.82rem;">Includes Fall/Spring split tables, all-role completion rates, triad-level email analysis, Spring 2026 submission pipeline, and watch items.</span></p>
     </div>
 
-    <h3 class="h3-styled reveal" id="cross-conversion">Pipeline conversion rates</h3>
-    <p class="reveal" style="margin-bottom:1rem;">Submission-to-response conversion by role. Semesters with fewer submitted triads have generally exhibited higher per-triad conversion rates.</p>
-    <div class="semester-split reveal">
-      <div class="split-panel">
-        <div class="split-header fall">Fall Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Triads</th><th>FE rate</th><th>CW rate</th><th>SV rate</th></tr></thead>
-            <tbody>
-              <tr><td>Fall 2023</td><td class="mono">530</td><td class="mono">29.1%</td><td class="mono">24.0%</td><td class="mono">24.2%</td></tr>
-              <tr style="background:var(--green-dim);"><td><strong>Fall 2024</strong></td><td class="mono">195</td><td class="mono" style="color:var(--green);font-weight:600;">80.5%</td><td class="mono" style="color:var(--green);font-weight:600;">69.7%</td><td class="mono" style="color:var(--green);font-weight:600;">68.2%</td></tr>
-              <tr style="background:var(--red-dim);"><td><strong>Fall 2025</strong></td><td class="mono">517</td><td class="mono" style="color:var(--red);font-weight:600;">25.3%</td><td class="mono" style="color:var(--red);">17.4%</td><td class="mono" style="color:var(--text-muted);">TBD</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="split-panel">
-        <div class="split-header spring">Spring Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Triads</th><th>FE rate</th><th>CW rate</th><th>SV rate</th></tr></thead>
-            <tbody>
-              <tr><td>Spring 2024</td><td class="mono">319</td><td class="mono">46.1%</td><td class="mono">34.8%</td><td class="mono">36.4%</td></tr>
-              <tr><td>Spring 2025</td><td class="mono">264</td><td class="mono">37.5%</td><td class="mono">30.3%</td><td class="mono">29.5%</td></tr>
-              <tr><td style="color:var(--text-muted);">Spring 2026</td><td class="mono" style="color:var(--text-muted);">266</td><td class="mono" style="color:var(--text-muted);">TBD</td><td class="mono" style="color:var(--text-muted);">TBD</td><td class="mono" style="color:var(--text-muted);">TBD</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+    <h3 class="h3-styled reveal" id="cross-timing">Headline findings</h3>
 
-    <div class="insight action reveal" style="margin-top:1.5rem;">
-      <div class="insight-tag">Fall 2024 comparison</div>
-      <p><strong>Fall 2024 submitted 62% fewer triads than Fall 2023 yet produced a comparable number of FE responses (157 vs 154) and more CW and SV responses (136 vs 127, 133 vs 128).</strong> Its 80.5% focal employee conversion rate was more than triple Fall 2025's 25.3%. Across semesters, fewer submissions combined with faster distribution has been associated with higher per-triad conversion rates.</p>
-    </div>
-
-    <h3 class="h3-styled reveal" id="cross-email">Email quality across semesters</h3>
-    <p class="reveal" style="margin-bottom:1rem;">Triad-level email type configuration across all six semesters, including Spring 2026 submission data. Spring 2026 submission data, collected under new screening requirements, shows the highest all-work rate and lowest all-personal rate observed across all semesters.</p>
-    <div class="semester-split reveal">
-      <div class="split-panel">
-        <div class="split-header fall">Fall Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Triads</th><th>All work</th><th>Mixed</th><th>All personal</th></tr></thead>
-            <tbody>
-              <tr><td>Fall 2023</td><td class="mono">530</td><td class="mono">43.4%</td><td class="mono">27.2%</td><td class="mono">29.4%</td></tr>
-              <tr><td>Fall 2024</td><td class="mono">195</td><td class="mono">26.2%</td><td class="mono">34.4%</td><td class="mono">39.5%</td></tr>
-              <tr><td>Fall 2025</td><td class="mono">517</td><td class="mono">36.6%</td><td class="mono">32.7%</td><td class="mono">30.8%</td></tr>
-            </tbody>
-          </table>
-        </div>
+    <div class="stat-row reveal" style="margin-top:1rem;">
+      <div class="stat-box">
+        <div class="stat-value" style="color:var(--green);">16.6%</div>
+        <div class="stat-label">Best all-3 completion</div>
+        <div style="font-size:0.7rem; color:var(--text-muted); margin-top:0.25rem;">Fall 2024 (n=187)</div>
       </div>
-      <div class="split-panel">
-        <div class="split-header spring">Spring Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Triads</th><th>All work</th><th>Mixed</th><th>All personal</th></tr></thead>
-            <tbody>
-              <tr><td>Spring 2024</td><td class="mono">319</td><td class="mono">40.4%</td><td class="mono">26.0%</td><td class="mono">33.5%</td></tr>
-              <tr><td>Spring 2025</td><td class="mono">264</td><td class="mono">26.5%</td><td class="mono">35.2%</td><td class="mono">38.3%</td></tr>
-              <tr style="background:var(--green-dim);"><td><strong>Spring 2026</strong></td><td class="mono">266</td><td class="mono" style="color:var(--green);font-weight:600;">56.4%</td><td class="mono">23.7%</td><td class="mono" style="color:var(--green);font-weight:600;">19.9%</td></tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="stat-box">
+        <div class="stat-value" style="color:var(--red);">6.2%</div>
+        <div class="stat-label">Fall 2025 all-3 rate</div>
+        <div style="font-size:0.7rem; color:var(--text-muted); margin-top:0.25rem;">32 of 513 triads</div>
       </div>
-    </div>
-
-    <div class="stat-row reveal" style="margin-top:1.5rem;">
+      <div class="stat-box">
+        <div class="stat-value accent">2.5–2.9×</div>
+        <div class="stat-label">Work vs personal gap (all roles)</div>
+        <div style="font-size:0.7rem; color:var(--text-muted); margin-top:0.25rem;">Fall 2025, widening trend</div>
+      </div>
       <div class="stat-box">
         <div class="stat-value" style="color:var(--green);">56.4%</div>
         <div class="stat-label">All-work triads (Spr '26)</div>
         <div style="font-size:0.7rem; color:var(--green); margin-top:0.25rem;">↑ from 36.6% in Fall '25</div>
       </div>
-      <div class="stat-box">
-        <div class="stat-value" style="color:var(--green);">19.9%</div>
-        <div class="stat-label">All-personal triads (Spr '26)</div>
-        <div style="font-size:0.7rem; color:var(--green); margin-top:0.25rem;">↓ from 30.8% in Fall '25</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" style="color:var(--text-bright);">~60%</div>
-        <div class="stat-label">Work email rate (all roles)</div>
-        <div style="font-size:0.7rem; color:var(--green); margin-top:0.25rem;">↑ from ~45% in Fall '25</div>
-      </div>
     </div>
 
-    <p class="reveal" style="margin-top:1.5rem;">The per-role work email rates also shifted consistently:</p>
-    <div class="comp-table-wrap reveal">
-      <table class="comp-table">
-        <thead><tr><th>Role</th><th>Fall 2025</th><th>Spring 2026</th><th>Change</th></tr></thead>
-        <tbody>
-          <tr><td>Focal Employee</td><td class="mono">43.5%</td><td class="mono" style="color:var(--green);font-weight:600;">59.2%</td><td class="mono" style="color:var(--green);">+15.7 pp</td></tr>
-          <tr><td>Coworker</td><td class="mono">46.2%</td><td class="mono" style="color:var(--green);font-weight:600;">60.3%</td><td class="mono" style="color:var(--green);">+14.1 pp</td></tr>
-          <tr><td>Supervisor</td><td class="mono">48.2%</td><td class="mono" style="color:var(--green);font-weight:600;">61.0%</td><td class="mono" style="color:var(--green);">+12.8 pp</td></tr>
-        </tbody>
-      </table>
+    <!-- Chart: Work vs Personal FE gap widening -->
+    <h3 class="h3-styled reveal" id="cross-conversion">The widening work-vs-personal gap</h3>
+    <p class="reveal" style="margin-bottom:0.5rem;">Focal employee completion rates by email type. The gap has widened from 1.3× to 2.5× over five semesters, with coworker (2.9×) and supervisor (2.7×) gaps even larger in Fall 2025.</p>
+
+    <div class="reveal" style="overflow-x:auto; margin:1.5rem 0;">
+      <svg viewBox="0 0 820 340" style="width:100%;height:auto;font-family:'Source Sans 3',sans-serif;">
+        <text x="410" y="22" text-anchor="middle" fill="#4a4640" font-size="13" font-weight="600">Focal Employee Completion Rate: Work vs Personal Email</text>
+        <text x="410" y="38" text-anchor="middle" fill="#8a857d" font-size="10" font-family="'JetBrains Mono',monospace">By semester — gap widening from 1.3× to 2.5×</text>
+        <line x1="100" y1="60" x2="100" y2="280" stroke="#e2e0db" stroke-width="1"/>
+        <line x1="100" y1="60" x2="780" y2="60" stroke="#e2e0db" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <line x1="100" y1="115" x2="780" y2="115" stroke="#e2e0db" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <line x1="100" y1="170" x2="780" y2="170" stroke="#e2e0db" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <line x1="100" y1="225" x2="780" y2="225" stroke="#e2e0db" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <line x1="100" y1="280" x2="780" y2="280" stroke="#e2e0db" stroke-width="1"/>
+        <text x="92" y="64" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">50%</text>
+        <text x="92" y="119" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">40%</text>
+        <text x="92" y="174" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">30%</text>
+        <text x="92" y="229" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">20%</text>
+        <text x="92" y="284" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">10%</text>
+        <rect x="130" y="70.6" width="42" height="209.4" rx="3" fill="#16753a" opacity="0.82"/>
+        <rect x="176" y="137.5" width="42" height="142.5" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="151" y="64" text-anchor="middle" fill="#16753a" font-size="10" font-weight="600">47.7%</text>
+        <text x="197" y="131" text-anchor="middle" fill="#c53030" font-size="10" font-weight="600">26.5%</text>
+        <text x="164" y="298" text-anchor="middle" fill="#4a4640" font-size="10">Fall '23</text>
+        <text x="164" y="312" text-anchor="middle" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">1.8×</text>
+        <rect x="265" y="89.4" width="42" height="190.6" rx="3" fill="#16753a" opacity="0.82"/>
+        <rect x="311" y="112.4" width="42" height="167.6" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="286" y="83" text-anchor="middle" fill="#16753a" font-size="10" font-weight="600">39.1%</text>
+        <text x="332" y="106" text-anchor="middle" fill="#c53030" font-size="10" font-weight="600">30.8%</text>
+        <text x="299" y="298" text-anchor="middle" fill="#4a4640" font-size="10">Spr '24</text>
+        <text x="299" y="312" text-anchor="middle" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">1.3×</text>
+        <rect x="400" y="86.2" width="42" height="193.8" rx="3" fill="#16753a" opacity="0.82"/>
+        <rect x="446" y="117.6" width="42" height="162.4" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="421" y="80" text-anchor="middle" fill="#16753a" font-size="10" font-weight="600">40.6%</text>
+        <text x="467" y="111" text-anchor="middle" fill="#c53030" font-size="10" font-weight="600">28.8%</text>
+        <text x="434" y="298" text-anchor="middle" fill="#4a4640" font-size="10">Fall '24</text>
+        <text x="434" y="312" text-anchor="middle" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">1.4×</text>
+        <rect x="535" y="82.8" width="42" height="197.2" rx="3" fill="#16753a" opacity="0.82"/>
+        <rect x="581" y="179.6" width="42" height="100.4" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="556" y="76" text-anchor="middle" fill="#16753a" font-size="10" font-weight="600">42.2%</text>
+        <text x="602" y="173" text-anchor="middle" fill="#c53030" font-size="10" font-weight="600">18.4%</text>
+        <text x="569" y="298" text-anchor="middle" fill="#4a4640" font-size="10">Spr '25</text>
+        <text x="569" y="312" text-anchor="middle" fill="#c53030" font-size="9" font-weight="600" font-family="'JetBrains Mono',monospace">2.3×</text>
+        <rect x="670" y="95.0" width="42" height="185.0" rx="3" fill="#16753a" opacity="0.82"/>
+        <rect x="716" y="215.6" width="42" height="64.4" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="691" y="89" text-anchor="middle" fill="#16753a" font-size="10" font-weight="600">36.5%</text>
+        <text x="737" y="209" text-anchor="middle" fill="#c53030" font-size="10" font-weight="600">14.7%</text>
+        <text x="704" y="298" text-anchor="middle" fill="#4a4640" font-size="10">Fall '25</text>
+        <text x="704" y="312" text-anchor="middle" fill="#c53030" font-size="9" font-weight="700" font-family="'JetBrains Mono',monospace">2.5×</text>
+        <rect x="310" y="325" width="12" height="12" rx="2" fill="#16753a" opacity="0.82"/>
+        <text x="326" y="336" fill="#4a4640" font-size="10">Work email</text>
+        <rect x="420" y="325" width="12" height="12" rx="2" fill="#c53030" opacity="0.72"/>
+        <text x="436" y="336" fill="#4a4640" font-size="10">Personal email</text>
+      </svg>
     </div>
 
-    <div class="insight action reveal" style="margin-top:1.5rem;">
-      <div class="insight-tag">What changed</div>
-      <p>For Spring 2026, the Step 2B submission form was updated with explicit language requiring legitimate company email addresses — no personal accounts (Gmail, Yahoo, WeChat, etc.). The screening questions also route students through a readiness check before they can submit contacts. Given the approximately 3× completion rate difference between work and personal email triads observed in Fall 2025, this shift in email composition may be associated with improved downstream conversion rates.</p>
+    <!-- Chart: Composition shift -->
+    <h3 class="h3-styled reveal" id="cross-email">Spring 2026 submission quality</h3>
+    <p class="reveal" style="margin-bottom:0.5rem;">The new screening requirements shifted the email composition of submitted triads. Spring 2026 has the highest all-work rate (56.4%) and lowest all-personal rate (19.9%) across all semesters, along with 79.3% within-triad domain matching (up from 58.6%).</p>
+
+    <div class="reveal" style="overflow-x:auto; margin:1.5rem 0;">
+      <svg viewBox="0 0 820 200" style="width:100%;height:auto;font-family:'Source Sans 3',sans-serif;">
+        <text x="410" y="22" text-anchor="middle" fill="#4a4640" font-size="13" font-weight="600">Triad Email Composition: Fall 2025 → Spring 2026</text>
+        <text x="410" y="38" text-anchor="middle" fill="#8a857d" font-size="10" font-family="'JetBrains Mono',monospace">Effect of screening requirements on submission quality</text>
+        <text x="160" y="70" text-anchor="end" fill="#4a4640" font-size="12" font-weight="600">Fall 2025</text>
+        <text x="160" y="84" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">n=517</text>
+        <rect x="170" y="58" width="219.6" height="34" rx="3" fill="#16753a" opacity="0.82"/>
+        <text x="279.8" y="80" text-anchor="middle" fill="white" font-size="11" font-weight="600">36.6%</text>
+        <rect x="389.6" y="58" width="196.2" height="34" rx="0" fill="#b45309" opacity="0.72"/>
+        <text x="487.7" y="80" text-anchor="middle" fill="white" font-size="11" font-weight="600">32.7%</text>
+        <rect x="585.8" y="58" width="184.8" height="34" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="678.2" y="80" text-anchor="middle" fill="white" font-size="11" font-weight="600">30.8%</text>
+        <text x="160" y="124" text-anchor="end" fill="#4a4640" font-size="12" font-weight="600">Spring 2026</text>
+        <text x="160" y="138" text-anchor="end" fill="#8a857d" font-size="9" font-family="'JetBrains Mono',monospace">n=266</text>
+        <rect x="170" y="112" width="338.4" height="34" rx="3" fill="#16753a" opacity="0.82"/>
+        <text x="339.2" y="134" text-anchor="middle" fill="white" font-size="11" font-weight="700">56.4%</text>
+        <rect x="508.4" y="112" width="142.2" height="34" rx="0" fill="#b45309" opacity="0.72"/>
+        <text x="579.5" y="134" text-anchor="middle" fill="white" font-size="11" font-weight="600">23.7%</text>
+        <rect x="650.6" y="112" width="119.4" height="34" rx="3" fill="#c53030" opacity="0.72"/>
+        <text x="710.3" y="134" text-anchor="middle" fill="white" font-size="11" font-weight="600">19.9%</text>
+        <text x="339.2" y="163" text-anchor="middle" fill="#16753a" font-size="10" font-weight="600" font-family="'JetBrains Mono',monospace">↑ +19.8 pp</text>
+        <text x="710.3" y="163" text-anchor="middle" fill="#c53030" font-size="10" font-weight="600" font-family="'JetBrains Mono',monospace">↓ −10.9 pp</text>
+        <rect x="250" y="180" width="12" height="12" rx="2" fill="#16753a" opacity="0.82"/>
+        <text x="266" y="191" fill="#4a4640" font-size="10">All work</text>
+        <rect x="350" y="180" width="12" height="12" rx="2" fill="#b45309" opacity="0.72"/>
+        <text x="366" y="191" fill="#4a4640" font-size="10">Mixed</text>
+        <rect x="430" y="180" width="12" height="12" rx="2" fill="#c53030" opacity="0.72"/>
+        <text x="446" y="191" fill="#4a4640" font-size="10">All personal</text>
+      </svg>
     </div>
 
-    <h3 class="h3-styled reveal" id="cross-domain">Domain matching within triads</h3>
-    <p class="reveal" style="margin-bottom:1rem;">The share of triads where all three contacts share the same email domain — a proxy for whether the focal employee, coworker, and supervisor work at the same organization.</p>
-    <div class="semester-split reveal">
-      <div class="split-panel">
-        <div class="split-header fall">Fall Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Triads</th><th>All 3 same</th><th>2 of 3</th><th>All diff</th></tr></thead>
-            <tbody>
-              <tr><td>Fall 2023</td><td class="mono">530</td><td class="mono">57.5%</td><td class="mono">32.8%</td><td class="mono">9.6%</td></tr>
-              <tr><td>Fall 2024</td><td class="mono">195</td><td class="mono">50.8%</td><td class="mono">40.5%</td><td class="mono">8.7%</td></tr>
-              <tr><td>Fall 2025</td><td class="mono">517</td><td class="mono">58.6%</td><td class="mono">31.5%</td><td class="mono">9.9%</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="split-panel">
-        <div class="split-header spring">Spring Semesters</div>
-        <div class="comp-table-wrap">
-          <table class="comp-table">
-            <thead><tr><th>Semester</th><th>Triads</th><th>All 3 same</th><th>2 of 3</th><th>All diff</th></tr></thead>
-            <tbody>
-              <tr><td>Spring 2024</td><td class="mono">319</td><td class="mono">58.9%</td><td class="mono">31.3%</td><td class="mono">9.7%</td></tr>
-              <tr><td>Spring 2025</td><td class="mono">264</td><td class="mono">47.7%</td><td class="mono">38.6%</td><td class="mono">13.6%</td></tr>
-              <tr style="background:var(--green-dim);"><td><strong>Spring 2026</strong></td><td class="mono">266</td><td class="mono" style="color:var(--green);font-weight:600;">79.3%</td><td class="mono">15.0%</td><td class="mono" style="color:var(--green);font-weight:600;">5.6%</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+    <div class="insight action reveal" style="margin-top:1.5rem;" id="cross-domain" style="margin-top:1.5rem;">
+      <div class="insight-tag">Key patterns from the full analysis</div>
+      <p><strong>Distribution speed correlates with conversion.</strong> Fall 2024 (4-day time-to-50%) had the highest all-three-completed rate at 16.6%. Fall 2025 (18-day compressed window) had the lowest at 6.2%.</p>
+      <p><strong>The work-vs-personal gap has widened across all roles.</strong> In Fall 2025: FE 2.5×, CW 2.9×, SV 2.7×. At the triad level, all-work triads completed at 9.2% versus 1.9% for all-personal (4.8× gap).</p>
+      <p><strong>Spring 2026 submission quality is the highest observed.</strong> 56.4% all-work triads (up from 36.6%), 79.3% within-triad domain matching (up from 58.6%), and multi-submissions down from 95 to 37 students.</p>
+      <p><strong>Watch items:</strong> ~15% .edu email submissions, 63% of focal employees sourced through family connections, 20% all-personal triads remain.</p>
     </div>
 
-    <div class="insight action reveal" style="margin-top:1.5rem;">
-      <div class="insight-tag">Why this matters</div>
-      <p>Higher domain matching rates are consistent with students submitting contacts who work at the same organization, reducing the likelihood of unrelated triads. The 20+ percentage-point increase in Spring 2026 coincides with the introduction of new screening requirements, suggesting these changes may be filtering for within-organization workplace relationships.</p>
+    <div class="reveal" style="margin-top:2rem; text-align:center;" id="cross-spring26">
+      <a href="https://usc-marshall-behavioral-lab.github.io/mor-field-cross-semester-analysis" target="_blank" style="display:inline-block; padding:0.75rem 2rem; border-radius:8px; background:var(--accent); color:white; text-decoration:none; font-family:'JetBrains Mono',monospace; font-size:0.82rem; letter-spacing:0.04em;">View Full Cross-Semester Report →</a>
+      <p style="margin-top:0.5rem; font-size:0.78rem; color:var(--text-muted);">Complete tables, per-role breakdowns, Spring 2026 pipeline status, and watch items</p>
     </div>
 
-    <h3 class="h3-styled reveal" id="cross-spring26">Spring 2026 submission update (as of March 10, 2026)</h3>
-    <p class="reveal" style="margin-bottom:1rem;">Current submission pipeline for Spring 2026. Survey distribution has not yet begun.</p>
-
-    <div class="stat-row reveal" style="margin-top:1rem;">
-      <div class="stat-box">
-        <div class="stat-value accent">544</div>
-        <div class="stat-label">Students in BUAD 304</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value blue">354</div>
-        <div class="stat-label">Opened Step 2B (65.1%)</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" style="color:var(--text-bright);">267</div>
-        <div class="stat-label">Completed submissions</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-value" style="color:var(--green);">261</div>
-        <div class="stat-label">Valid (6 unusable)</div>
-      </div>
-    </div>
-
-    <p class="reveal" style="margin-top:1.5rem;"><strong>Changes implemented this semester:</strong></p>
-    <div class="cards reveal" style="margin-top:0.5rem;">
-      <div class="card">
-        <div class="card-icon" style="background: var(--accent-dim); color: var(--accent);">📋</div>
-        <div class="card-title">Screening requirements</div>
-        <p>Step 2B now requires legitimate company emails and routes students through readiness checks before allowing contact submission.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon" style="background: var(--red-dim); color: var(--red);">📅</div>
-        <div class="card-title">Firmer deadline</div>
-        <p>Official cutoff: March 6. Proactive outreach extending to March 13 for remaining students, but a much tighter window than previous semesters.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon" style="background: var(--green-dim); color: var(--green);">🔄</div>
-        <div class="card-title">Rolling distribution</div>
-        <p>Surveys will launch on a rolling basis as contacts come in, rather than waiting and distributing in large batches.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon" style="background: var(--blue-dim); color: var(--blue);">📝</div>
-        <div class="card-title">Updated materials</div>
-        <p>Revised handouts, rebuilt submission form, updated email language, and a new employee FAQ site for workplace contacts.</p>
-      </div>
-    </div>
-
-    <p class="reveal" style="margin-top:1.5rem;"><strong>Multi-submission comparison:</strong></p>
-    <div class="comp-table-wrap reveal">
-      <table class="comp-table">
-        <thead><tr><th>Metric</th><th>Fall 2025</th><th>Spring 2026</th></tr></thead>
-        <tbody>
-          <tr><td>Total submissions</td><td class="mono">665</td><td class="mono">354</td></tr>
-          <tr><td>Unique students</td><td class="mono">539</td><td class="mono">307</td></tr>
-          <tr><td>Multi-submitters</td><td class="mono">95 <span style="color:var(--text-muted);font-size:0.8em;">(125 extra)</span></td><td class="mono" style="color:var(--green);">37 <span style="font-size:0.8em;">(47 extra)</span></td></tr>
-          <tr><td>Submission window</td><td class="mono">Sep 18 – Oct 24 <span style="color:var(--text-muted);font-size:0.8em;">(36 days)</span></td><td class="mono">Feb 11 – Mar 9 <span style="color:var(--text-muted);font-size:0.8em;">(26 days)</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="h3-styled reveal" id="cross-flags">Watch items for Spring 2026</h3>
-    <p class="reveal" style="margin-bottom:1rem;">Patterns in the Spring 2026 data worth monitoring as we move into distribution.</p>
-
-    <div class="insight warn reveal" style="margin-top:1rem;">
-      <div class="insight-tag" style="color:var(--red);">.edu emails — 15% of submissions</div>
-      <p>83 contact emails use usc.edu domains and another 10 use marshall.usc.edu. Combined with the jump in higher education orgs (6.8% → 13.1%), this could indicate legitimate USC staff — or students submitting campus contacts who don't fit the intended participant profile. Worth cross-referencing against faculty/staff directories before distribution.</p>
-    </div>
-
-    <div class="insight warn reveal">
-      <div class="insight-tag" style="color:var(--accent);">Family connections — 63% of focal employees</div>
-      <p>Roughly 43% of focal employees are immediate family members (parent, sibling, spouse). Adding extended family (6%) and family friends (14%) brings the total to about 63% coming through family channels. This is a natural path for undergraduates, but worth being aware of from a data independence standpoint.</p>
-    </div>
-
-    <div class="insight action reveal">
-      <div class="insight-tag">Remaining personal emails</div>
-      <p>Despite the new screening language, about 20% of triads still use all-personal emails. The top personal domains remain gmail.com (dominant), yahoo.com, and a handful of qq.com addresses. Based on prior semesters, these contacts may convert at lower rates. However, the overall email type distribution has shifted toward work emails relative to all prior semesters.</p>
-    </div>
-
+    <span id="cross-flags" style="display:block;height:0;"></span>
     <a class="fn" title="Step 2B submission forms (Fall 2023 – Spring 2026), Qualtrics survey exports (Fall 2023 – Fall 2025)">[21]</a>
-
   </div>
 </section>
 
